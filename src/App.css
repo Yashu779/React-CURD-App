@@ -1,0 +1,159 @@
+body {
+  background-color: #ff515e;
+  color: white;
+  font-family: sans-serif;
+  margin: 0;
+}
+
+.m-Container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  flex-direction: column;
+}
+
+.heading-Text {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.form-Section {
+  /* border: 1px solid red; */
+  padding: 3%;
+}
+.input-Containers {
+  /* border: 1px solid green; */
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 10px 0;
+  flex-direction: column;
+}
+.input-Filed {
+  /* border: 1px solid white; */
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 9px;
+}
+input {
+  height: 5vh;
+  background-color: white;
+  border: 1px solid white;
+  margin-top: 5px;
+  width: 300px;
+  border-radius: 8px;
+  font-size: 14px;
+  padding-left: 10px;
+  color: black;
+  font-weight: 300;
+}
+
+.Options-Containers {
+  /* border: 1px solid white;*/
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Submit-button {
+  color: black;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid white;
+  padding: 10px;
+  width: 140px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.Submit-button :hover {
+  background-color: rgb(246, 222, 194);
+}
+.Button-Container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+/* Customer List style */
+.List-Container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* width: 100vw; */
+}
+.customer-list-container {
+  /* border: 1px solid white; */
+  height: auto;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.User-Labels {
+  border: 1px solid black;
+  /* border-bottom: none; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 95vw;
+  /* gap: 20%; */
+  /* padding: 10px; */
+}
+.List-Labels {
+  /* border: 1px solid black; */
+  height: 8vh;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Buttons {
+  width: 90px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  margin-left: 20px;
+}
+.List-Container.empty {
+  display: none;
+}
+
+.Error-Warning {
+  color: black;
+  font-size: 12px;
+  padding-top: 5px;
+  margin-left: 5px;
+}
+
+@media screen and (max-width: 700px) {
+  .User-Details-Data {
+    display: flex;
+  }
+  .customer-list-container {
+    display: flex;
+    /* border: 1px solid; */
+    flex-direction: row;
+    height: 70vh;
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+  }
+  .List-Labels {
+    width: 90%;
+  }
+  .User-Labels {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+  }
+  .Buttons {
+    margin: 20px;
+  }
+}
